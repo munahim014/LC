@@ -21,11 +21,12 @@ class Solution {
         
 //         return false;
 //     }
+    
      public boolean containsDuplicate(int[] nums) {
         Set<Integer> number = new HashSet<Integer>();
         for (int num : nums){
             if (number.contains(num)) return true;
-            else number.add(num);
+            number.add(num);
         }
         
         return false;
